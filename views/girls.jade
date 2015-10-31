@@ -1,0 +1,18 @@
+extend layout
+
+block content
+	div.girls
+		each girl, i in girls
+			div.girl
+				div.data-container
+					div.girl-photo
+						img(src=girl.photo_100)
+					div.girl-name
+						h4 #{girl.first_name} #{girl.last_name}
+				div.controls
+					button(data-id=girl.id data-status='1') Есть парень
+					button(data-id=girl.id data-status='0') Нет парня
+					button(data-id=girl.id data-status='2') Я не знаю
+
+	script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+	script(src='/scripts/girls.js')

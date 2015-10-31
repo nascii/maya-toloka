@@ -1,0 +1,36 @@
+.girl
+	display flex
+	align-items center
+	justify-content space-between
+	padding 20px
+	margin 10px auto
+	width 700px
+	border 1px solid main-color
+
+.girl-photo
+	img
+		height 100px
+		width 100px
+
+.controls
+	display flex
+	justify-content space-between
+	align-items center
+	width 300px
+	height 100%
+	
+	button
+		line-height 30px
+		align-items center
+		background-color #fff
+		padding 5px 10px
+		border 1px solid main-color
+		cursor pointer
+		outline none
+		
+	&.voted
+		button
+			background-color #95a5a6
+			&.voted
+				background-color #2ecc71
+		
